@@ -1,0 +1,88 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimens_small"
+        android:paddingTop="@dimen/dimens_small" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="搜索"
+            android:textColor="@color/gray_mid"
+            android:textSize="@dimen/textsize_mid" />
+
+        <TextView
+            android:id="@+id/rmfragfunction_searchkeyword"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical"
+            android:text="搜索字段"
+            android:textSize="@dimen/textsize_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rmfragfunction_filterresult"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical"
+            android:text="过滤搜索结果"
+            android:textSize="@dimen/textsize_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rmfragfunction_selfsearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical"
+            android:text="自定义查询"
+            android:textSize="@dimen/textsize_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_big_big"
+            android:text="选项设置"
+            android:textColor="@color/gray_mid"
+            android:textSize="@dimen/textsize_mid" />
+
+        <TextView
+            android:id="@+id/rmfragfunction_dbset"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical"
+            android:text="数据库设置"
+            android:textSize="@dimen/textsize_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rmfragfunction_clearattachment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical"
+            android:text="清除已下载的附件"
+            android:textSize="@dimen/textsize_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rmfragfunction_logout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical"
+            android:text="注销当前RedMine帐号"
+            android:textSize="@dimen/textsize_big"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

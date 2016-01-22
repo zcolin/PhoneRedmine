@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 所有Frag的背景颜色 -->
+    <color name="theme_bg_color">#f7f7f7</color>
+
+    <!-- 深蓝黑 -->
+    <color name="black_blue">#333745</color>
+    <!-- 透明 -->
+    <color name="transparent">#00000000</color>
+    <!-- 深灰色 -->
+    <color name="gray_dark">#646464</color>
+    <!-- 中灰 -->
+    <color name="gray_mid">#a9a9a9</color>
+       <!-- 浅灰 -->
+    <color name="gray_light">#d1cfd1</color>
+    <!-- 白 -->
+    <color name="white">#ffffff</color>
+    <!-- 白 -->
+    <color name="white_dark">#f7f7f7</color>
+        <!-- 白 -->
+    <color name="white_transparent">#75ffffff</color>
+    <!-- 荧光绿 -->
+    <color name="green_light">#81b305</color>
+    <!-- 荧光绿 -->
+    <color name="green_dark">#008B00</color>
+
+    <!-- 荧光绿 -->
+    <color name="red_light">#ec7676</color>
+
+    <!-- 深蓝 -->
+    <color name="darkblue">#5d7ab0</color>
+
+    <!-- 深蓝  -->
+    <color name="darkblue_dark">#cc483d8b</color>
+
+</resources>

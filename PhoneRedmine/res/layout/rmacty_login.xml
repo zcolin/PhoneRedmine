@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_login"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimens_large_mid"
+        android:paddingRight="@dimen/dimens_large_mid" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="RedMine"
+            android:textColor="@color/white"
+            android:textSize="45dp" />
+
+        <EditText
+            android:id="@+id/rmactylogin_name"
+            style="@style/Style_White_Big_TextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_large"
+            android:gravity="center_vertical"
+            android:hint="请输入帐号"
+            android:singleLine="true"
+            android:textColorHint="@color/white_dark" />
+
+        <EditText
+            android:id="@+id/rmactylogin_pwd"
+            style="@style/Style_White_Big_TextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_big"
+            android:gravity="center_vertical"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/white_dark" />
+
+        <TextView
+            android:id="@+id/rmactylogin_submit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_big"
+            android:background="@drawable/btn_green_selector"
+            android:gravity="center"
+            android:text="立即登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_mid" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rmactylogin_seturl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dimens_mid"
+        android:text="设置URL"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_mid" />
+
+</RelativeLayout>

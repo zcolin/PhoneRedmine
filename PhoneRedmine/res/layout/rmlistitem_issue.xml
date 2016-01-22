@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="7dp" >
+
+    <RelativeLayout
+        android:id="@+id/rmlistitemissue_subject_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/rmlistitemissue_subject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/textsize_big" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/rmlistitemissue_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rmlistitemissue_subject_rl"
+        android:ellipsize="end"
+        android:ems="5"
+        android:textColor="@color/gray_mid"
+        android:textSize="@dimen/textsize_small" />
+
+    <TextView
+        android:id="@+id/rmlistitemissue_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rmlistitemissue_id"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:ems="5"
+        android:textColor="@color/gray_mid"
+        android:textSize="@dimen/textsize_small" />
+
+    <TextView
+        android:id="@+id/rmlistitemissue_assignedto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/rmlistitemissue_id"
+        android:drawableLeft="@drawable/icon_person"
+        android:ellipsize="end"
+        android:ems="8"
+        android:textColor="@color/gray_mid"
+        android:textSize="@dimen/textsize_small" />
+
+    <TextView
+        android:id="@+id/rmlistitemissue_tracker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rmlistitemissue_id"
+        android:layout_marginTop="@dimen/dimens_small"
+        android:ellipsize="end"
+        android:maxEms="5"
+        android:paddingBottom="2dp"
+        android:paddingLeft="@dimen/dimens_small"
+        android:paddingRight="@dimen/dimens_small"
+        android:paddingTop="2dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_small" />
+
+    <TextView
+        android:id="@+id/rmlistitemissue_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/rmlistitemissue_tracker"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:ems="5"
+        android:textColor="@color/gray_mid"
+        android:textSize="@dimen/textsize_small" />
+
+    <TextView
+        android:id="@+id/rmlistitemissue_duedate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/rmlistitemissue_tracker"
+        android:drawableLeft="@drawable/icon_clock"
+        android:ellipsize="end"
+        android:ems="8"
+        android:textColor="@color/gray_mid"
+        android:textSize="@dimen/textsize_small" />
+
+    <RelativeLayout
+        android:id="@+id/rmlistitemissue_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rmlistitemissue_tracker" >
+
+        <TextView
+            android:id="@+id/rmlistitemissue_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:ems="8"
+            android:textColor="@color/gray_mid"
+            android:textSize="@dimen/textsize_small" />
+
+        <TextView
+            android:id="@+id/rmlistitemissue_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rmlistitemissue_project"
+            android:ellipsize="end"
+            android:ems="8"
+            android:textColor="@color/gray_mid"
+            android:textSize="@dimen/textsize_small" />
+
+        <com.phone.redmine.view.FCProgressView
+            android:id="@+id/rmlistitemissue_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimens_big"
+            android:gravity="right"
+            android:textColor="@color/gray_mid"
+            android:textSize="@dimen/textsize_small" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+
+    <dimen name="linespace_mid">5dp</dimen>
+    <dimen name="dimens_small">5dp</dimen>
+    <dimen name="dimens_mid">10dp</dimen>
+    <dimen name="dimens_big">15dp</dimen>
+    <dimen name="dimens_big_big">20dp</dimen>
+    <dimen name="dimens_large">25dp</dimen>
+    <dimen name="dimens_large_small">30dp</dimen>
+    <dimen name="dimens_large_mid">35dp</dimen>
+    <dimen name="dimens_large_big">40dp</dimen>
+    <dimen name="dimens_large_large">45dp</dimen>
+    
+    <dimen name="textsize_micro">12dp</dimen>
+    <dimen name="textsize_small">13dp</dimen>
+    <dimen name="textsize_mid">14dp</dimen>
+    <dimen name="textsize_big">15dp</dimen>
+    <dimen name="textsize_big_big">18dp</dimen>
+	<dimen name="textsize_large">22dp</dimen>
+	
+</resources>

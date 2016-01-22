@@ -1,0 +1,422 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_small" >
+
+        <LinearLayout
+            android:id="@+id/rmactyissuedetail_title_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_light"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimens_small" >
+
+            <TextView
+                android:id="@+id/rmactyissuedetail_title_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_mid"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rmactyissuedetail_title_tracker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimens_mid"
+                android:padding="@dimen/dimens_small"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_small" />
+
+            <TextView
+                android:id="@+id/rmactyissuedetail_title_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="@dimen/dimens_small"
+                android:textColor="@color/gray_dark"
+                android:textSize="@dimen/textsize_small" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rmactyissuedetail_subject"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dimens_small"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/textsize_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rmactyissuedetail_description"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dimens_small"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/textsize_small" />
+
+        <LinearLayout
+            android:id="@+id/rmactyissuedetail_content_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_mid"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/dimens_small" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimens_small" >
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_project_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/dimens_small"
+                    android:text="项目"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/textsize_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_project"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimens_small" >
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_status_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/dimens_small"
+                    android:text="状态"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/textsize_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimens_small" >
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_priority_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/dimens_small"
+                    android:text="优先级"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/textsize_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimens_small" >
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_assignto_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/dimens_small"
+                    android:text="指派给"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/textsize_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_assignto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimens_small" >
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_doneratio_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/dimens_small"
+                    android:text="%完成"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/textsize_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_doneratio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimens_small" >
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_startdate_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/dimens_small"
+                    android:text="开始日期"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/textsize_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_startdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimens_small" >
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_duedate_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/dimens_small"
+                    android:text="计划完成日期"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/textsize_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_duedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimens_small" >
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_version_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/dimens_small"
+                    android:text="版本"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/textsize_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimens_small" >
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_author_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/dimens_small"
+                    android:text="作者"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/textsize_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimens_small" >
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_createdon_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/dimens_small"
+                    android:text="创建于"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/textsize_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_createdon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimens_small" >
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_updateon_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/dimens_small"
+                    android:text="更新于"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/textsize_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_updateon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimens_small" >
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_category_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="7"
+                    android:gravity="right"
+                    android:paddingRight="@dimen/dimens_small"
+                    android:text="类别"
+                    android:textColor="@color/darkblue"
+                    android:textSize="@dimen/textsize_small"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rmactyissuedetail_content_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_mid"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rmactyissuedetail_customfields_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rmactyissuedetail_children_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_mid"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rmactyissuedetail_attachment_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_mid"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rmactyissuedetail_history_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_mid"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

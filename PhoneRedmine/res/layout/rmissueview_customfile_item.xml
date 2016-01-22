@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimens_small" 
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/rmissueviewcustomfileitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:gravity="right"
+        android:paddingRight="@dimen/dimens_small"
+        android:textColor="@color/darkblue"
+        android:textSize="@dimen/textsize_small"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rmissueviewcustomfileitem_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/textsize_mid"
+        android:textStyle="bold" />
+
+</LinearLayout>

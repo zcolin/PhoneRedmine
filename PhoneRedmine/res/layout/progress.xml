@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 进度条引用视图 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/progressBar_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <!--
+		<ProgressBar android:id="@+id/progressBar_pg"
+		android:scrollbarStyle="outsideOverlay"
+		style="?android:attr/progressBarStyleLarge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"> </ProgressBar>
+    -->
+
+    <RelativeLayout
+        android:id="@+id/progressBar_centerrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/progress_bacitem_bg" 
+        android:padding="10dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar_pg"
+            style="@style/progressbar_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <!--
+         <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/progressBar_pg"
+        android:layout_alignLeft="@id/progressBar_pg"
+        android:layout_alignRight="@id/progressBar_pg"
+        android:layout_alignTop="@id/progressBar_pg"
+        android:layout_margin="20dp"
+        android:background="@drawable/logo" />
+        -->
+
+        <TextView
+            android:id="@+id/progressBar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/progressBar_pg"
+            android:gravity="center_vertical"
+            android:textColor="@color/black_blue"
+            android:textSize="@dimen/textsize_small" >
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

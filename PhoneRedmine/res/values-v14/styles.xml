@@ -1,0 +1,9 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/accent_material_dark</item>
+        <item name="colorPrimaryDark">@color/accent_material_light</item>
+        <item name="android:windowBackground">@color/bright_foreground_inverse_material_light</item>
+    </style>
+
+</resources>

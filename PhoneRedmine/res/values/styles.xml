@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/accent_material_dark</item>
+        <item name="colorPrimaryDark">@color/accent_material_light</item>
+        <item name="android:windowBackground">@color/bright_foreground_inverse_material_light</item>
+    </style>
+
+    <style name="Style_Graydark_Mid_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textSize">@dimen/textsize_mid</item>
+    </style>
+
+    <style name="Style_Graydark_Big_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textSize">@dimen/textsize_mid</item>
+    </style>
+
+    <style name="Style_Black_Mid_Bold_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">@dimen/textsize_mid</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Style_darkblue_Mid_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/darkblue</item>
+        <item name="android:textSize">@dimen/textsize_mid</item>
+    </style>
+
+    <style name="Style_darkblue_Big_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/darkblue</item>
+        <item name="android:textSize">@dimen/textsize_big</item>
+    </style>
+
+    <style name="Style_darkblue_Mid_Center_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/darkblue</item>
+        <item name="android:textSize">@dimen/textsize_mid</item>
+    </style>
+
+    <style name="Style_darkblue_Big_Center_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/darkblue</item>
+        <item name="android:textSize">@dimen/textsize_big</item>
+    </style>
+
+    <style name="Style_White_Mid_Center_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize_mid</item>
+    </style>
+
+    <style name="Style_White_Small_Center_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+    </style>
+
+    <style name="Style_White_Big_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize_big</item>
+    </style>
+
+    <style name="Style_White_Big_Center_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/textsize_big</item>
+    </style>
+
+    <style name="Style_RedLight_Big_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/red_light</item>
+        <item name="android:textSize">@dimen/textsize_big</item>
+    </style>
+
+    <style name="Style_RedLight_Mid_TextView" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/red_light</item>
+        <item name="android:textSize">@dimen/textsize_mid</item>
+    </style>
+
+    <!-- 进度条风格 -->
+    <style name="progressbar_style">
+        <item name="android:indeterminateDrawable">@drawable/progress_draw</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:minWidth">48dip</item>
+        <item name="android:maxWidth">48dip</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:maxHeight">48dip</item>
+    </style>
+
+    <!-- 弹出框风格 -->
+    <style name="dialog_style" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- activity不变暗 -->
+    </style>
+
+    <!-- 弹出框弹出，退出动画 -->
+    <style name="dialogWindowAnim" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+</resources>

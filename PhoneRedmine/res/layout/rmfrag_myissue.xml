@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/rmfragmyissue_btntopswitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_small"
+        android:background="@drawable/btn_stroke_green_selector"
+        android:gravity="center"
+        android:padding="@dimen/dimens_mid"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_big" />
+
+    <com.phone.redmine.view.zrclistview.FCZrcListView
+        android:id="@+id/rmfragmyissue_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rmfragmyissue_btntopswitch"
+        android:layout_marginTop="@dimen/dimens_small" />
+
+    <TextView
+        android:id="@+id/rmfragmyissue_emptytext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+    <ProgressBar
+        android:id="@+id/rmfragmyissue_progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

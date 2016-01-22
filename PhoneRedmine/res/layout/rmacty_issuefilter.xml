@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dimens_small" >
+
+    <TextView
+        android:id="@+id/rmactyissuefilter_filter_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="过滤器"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/textsize_mid" />
+
+    <RadioGroup
+        android:id="@+id/rmactyissuefilter_filter_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_small" >
+
+        <RadioButton
+            android:id="@+id/rmactyissuefilter_filter_rb_opened"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="打开" />
+
+        <RadioButton
+            android:id="@+id/rmactyissuefilter_filter_rb_closed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="已关闭" />
+
+        <RadioButton
+            android:id="@+id/rmactyissuefilter_filter_rb_all"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="全部" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/rmactyissuefilter_cloumn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_big"
+        android:text="列"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/textsize_mid" />
+
+    <RadioGroup
+        android:id="@+id/rmactyissuefilter_cloumn_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_small" >
+
+        <RadioButton
+            android:id="@+id/rmactyissuefilter_cloumn_rb_issueid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="问题ID" />
+
+        <RadioButton
+            android:id="@+id/rmactyissuefilter_cloumn_rb_duedate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="计划完成日期" />
+
+        <RadioButton
+            android:id="@+id/rmactyissuefilter_cloumn_rb_startdate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="开始日期" />
+
+        <RadioButton
+            android:id="@+id/rmactyissuefilter_cloumn_rb_updateon"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="更新日期" />
+
+        <RadioButton
+            android:id="@+id/rmactyissuefilter_cloumn_rb_priority"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="优先级" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/rmactyissuefilter_sort_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimens_big"
+        android:text="排序"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/textsize_mid" />
+
+    <RadioGroup
+        android:id="@+id/rmactyissuefilter_sort_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_small" >
+
+        <RadioButton
+            android:id="@+id/rmactyissuefilter_rb_asc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="升序" />
+
+        <RadioButton
+            android:id="@+id/rmactyissuefilter_rb_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="降序" />
+    </RadioGroup>
+
+</LinearLayout>

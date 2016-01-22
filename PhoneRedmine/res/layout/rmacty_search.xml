@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/rmactysearch_top_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimens_big_big"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/rmactysearch_et_search"
+            style="@style/Style_Graydark_Big_TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="搜索字段/问题ID"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/rmactysearch_btn_search"
+            style="@style/Style_White_Big_Center_TextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_large"
+            android:layout_weight="1"
+            android:background="@drawable/btn_green_selector"
+            android:text="搜索" >
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/rmactysearch_lstview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rmactysearch_top_ll" />
+
+    <TextView
+        android:id="@+id/rmactysearch_emptytext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+</RelativeLayout>

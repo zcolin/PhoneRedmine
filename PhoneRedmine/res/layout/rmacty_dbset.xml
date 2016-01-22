@@ -1,0 +1,144 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_mid" >
+
+        <TextView
+            android:id="@+id/rmactydbset_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="与Redmine服务器数据进行同步.\n在服务器中跟新 跟踪、用户、版本等数据时， 请通过点击[对最新主数据进行同步]进行同步"
+            android:textColor="@color/gray_mid"
+            android:textSize="@dimen/textsize_micro" />
+
+        <TextView
+            android:id="@+id/rmactydbset_synctime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_small"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/gray_mid"
+            android:textSize="@dimen/textsize_micro" />
+
+        <TextView
+            android:id="@+id/rmactydbset_btnsync"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_small"
+            android:background="@drawable/btn_stroke_blue_selector"
+            android:gravity="center"
+            android:text="对最新主数据进行同步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_mid" />
+
+        <TextView
+            android:id="@+id/rmactydbset_tvtracker_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_big"
+            android:textColor="@color/gray_mid"
+            android:text="跟踪"
+            android:textSize="@dimen/textsize_micro" />
+
+        <TextView
+            android:id="@+id/rmactydbset_tvtracker"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textSize="@dimen/textsize_mid"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rmactydbset_tvstatus_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="状态"
+            android:layout_marginTop="@dimen/dimens_big"
+            android:textColor="@color/gray_mid"
+            android:textSize="@dimen/textsize_micro" />
+
+        <TextView
+            android:id="@+id/rmactydbset_tvstatus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textSize="@dimen/textsize_mid"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rmactydbset_tvusers_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_big"
+            android:text="人员"
+            android:textColor="@color/gray_mid"
+            android:textSize="@dimen/textsize_micro" />
+
+        <TextView
+            android:id="@+id/rmactydbset_tvusers"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textSize="@dimen/textsize_mid"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rmactydbset_tvpriority_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_big"
+            android:text="优先级"
+            android:textColor="@color/gray_mid"
+            android:textSize="@dimen/textsize_micro" />
+
+        <TextView
+            android:id="@+id/rmactydbset_tvpriority"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textSize="@dimen/textsize_mid"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rmactydbset_tvversion_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="版本"
+            android:layout_marginTop="@dimen/dimens_big"
+            android:textColor="@color/gray_mid"
+            android:textSize="@dimen/textsize_micro" />
+
+        <TextView
+            android:id="@+id/rmactydbset_tvversion"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textSize="@dimen/textsize_mid"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rmactydbset_tvcategory_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="类别"
+            android:layout_marginTop="@dimen/dimens_big"
+            android:textColor="@color/gray_mid"
+            android:textSize="@dimen/textsize_micro" />
+
+        <TextView
+            android:id="@+id/rmactydbset_tvcategory"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:textSize="@dimen/textsize_mid"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>

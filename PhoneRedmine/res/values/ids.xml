@@ -1,0 +1,6 @@
+<resources>
+
+    <item name="bnactyshopview_btn_phone" type="id"/>
+    <item name="bnactyshopview_btn_photo" type="id"/>
+
+</resources>

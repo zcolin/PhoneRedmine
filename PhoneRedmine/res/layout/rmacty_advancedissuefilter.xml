@@ -1,0 +1,273 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_small" >
+
+        <EditText
+            android:id="@+id/rmadvancedactyissuefilter_name"
+            style="@style/Style_Graydark_Big_TextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_mid"
+            android:hint="输入自定义搜索名称"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/rmadvancedactyissuefilter_filter_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_mid"
+            android:text="过滤器"
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/textsize_mid" />
+
+        <RelativeLayout
+            android:id="@+id/rmadvancedactyissuefilter_filter_project_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_filter_project_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="项目"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_filter_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmadvancedactyissuefilter_filter_status_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_filter_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="状态"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_filter_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmadvancedactyissuefilter_filter_tracker_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_filter_tracker_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="跟踪"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_filter_tracker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmadvancedactyissuefilter_filter_assignto_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_filter_assignto_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="指派给"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_filter_assignto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmadvancedactyissuefilter_filter_priority_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_filter_priority_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="优先级"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_filter_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmadvancedactyissuefilter_filter_version_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_filter_version_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="版本"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_filter_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmadvancedactyissuefilter_filter_category_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_filter_category_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="类别"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_filter_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/rmadvancedactyissuefilter_sort_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_big"
+            android:text="排序"
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/textsize_mid" />
+
+        <RelativeLayout
+            android:id="@+id/rmadvancedactyissuefilter_sort_cloumn_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_sort_cloumn_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="列"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_sort_cloumn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmadvancedactyissuefilter_sort_sort_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_sort_sort_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="排序"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmadvancedactyissuefilter_sort_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

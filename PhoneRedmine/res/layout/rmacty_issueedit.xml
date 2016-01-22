@@ -1,0 +1,395 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_small" >
+
+        <RelativeLayout
+            android:id="@+id/rmactyissueadd_subject_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmactyissueadd_subject_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ems="4"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="*主题"
+                android:textSize="@dimen/textsize_big" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/rmactyissueadd_subject"
+               style="@style/Style_Graydark_Big_TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_mid"
+                android:layout_toRightOf="@+id/rmactyissueadd_subject_text"
+                android:hint="输入主题名称"
+                android:maxLines="2" >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmactyissueadd_description_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmactyissueadd_description_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:ems="4"
+                android:gravity="center"
+                android:text="描述"
+                android:textSize="@dimen/textsize_big" />
+
+            <EditText
+                android:id="@+id/rmactyissueadd_description"
+                style="@style/Style_Graydark_Big_TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimens_mid"
+                android:layout_toRightOf="@+id/rmactyissueadd_description_text"
+                android:hint="输入描述"
+                android:maxLines="10" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmactyissueadd_status_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_mid"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmactyissueadd_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="状态"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmactyissueadd_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmactyissueadd_doneratio_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmactyissueadd_doneratio_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="%完成"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmactyissueadd_doneratio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmactyissueadd_assignto_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmactyissueadd_assignto_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="指派给"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmactyissueadd_assignto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmactyissueadd_notes_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmactyissueadd_notes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="注释"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmactyissueadd_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmactyissueadd_tracker_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_mid"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmactyissueadd_tracker_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="跟踪"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmactyissueadd_tracker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmactyissueadd_project_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmactyissueadd_project_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="项目"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmactyissueadd_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmactyissueadd_priority_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmactyissueadd_priority_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="优先级"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmactyissueadd_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmactyissueadd_startdate_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmactyissueadd_startdate_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="开始日期"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmactyissueadd_startdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmactyissueadd_duedate_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmactyissueadd_duedate_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="计划完成日期"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmactyissueadd_duedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmactyissueadd_version_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmactyissueadd_version_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="版本"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmactyissueadd_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rmactyissueadd_category_rl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/rmactyissueadd_category_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="类别"
+                android:textSize="@dimen/textsize_big" />
+
+            <TextView
+                android:id="@+id/rmactyissueadd_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/darkblue"
+                android:textSize="@dimen/textsize_big"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rmactyissueadd_customfields_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rmactyissueadd_attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_mid"
+            android:background="@drawable/common_listitem_cango_tc"
+            android:gravity="center_vertical"
+            android:text="添加附件"
+            android:textSize="@dimen/textsize_big" />
+
+        <LinearLayout
+            android:id="@+id/rmactyissueadd_attachment_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/rmactyissueadd_delete"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimens_mid"
+            android:background="@drawable/btn_green_selector"
+            android:gravity="center"
+            android:padding="@dimen/dimens_mid"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_big_big" />
+    </LinearLayout>
+
+</ScrollView>
