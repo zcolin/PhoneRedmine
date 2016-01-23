@@ -16,8 +16,8 @@
     公司的网超级烂，一直想使用AS，但是下个Gradle都得半个上午，试了几次就放弃了。现在还是在用Eclipse，每每看到GitHub的开源一行就能在AS中添加依赖的时候，对公司的网速只能默念几遍神兽了。
 
 ### 程序截图
-![](https://github.com/wl549388372/PhoneRedmine/screenshot/1.jpg)
-![](https://github.com/wl549388372/PhoneRedmine/screenshot/2.jpg)
-![](https://github.com/wl549388372/PhoneRedmine/screenshot/3.jpg)
-![](https://github.com/wl549388372/PhoneRedmine/screenshot/4.jpg)
-![](https://github.com/wl549388372/PhoneRedmine/screenshot/5.jpg)
+![](/screenshot/1.jpg)
+![](/screenshot/2.jpg)
+![](/screenshot/3.jpg)
+![](/screenshot/4.jpg)
+![](/screenshot/5.jpg)
